@@ -1,0 +1,4 @@
+gxcrawlervenv
+__pycache__
+.env
+.vscode/
