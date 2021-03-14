@@ -21,13 +21,14 @@ set GX_PASSWORD=password
 set GX_URL=url
 set GX_KBNAME=kbname
 ```
-Or use file of configuration in .\gxcrawler\\.env with the lines:
+Or use file of configuration in .\gxcrawler\\.env with the lines with your credentials:
 ```
 GX_USER=user
 GX_PASSWORD=password
 GX_URL=url
 GX_KBNAME=kbname
 ```
+<span style='color:red;'>Attention</span>: Be careful to make this available in code repositories like gitlab or github, add the .env file in the equivalent of .gitignore
 
 With python installed, run this command for your API to run, the result will be in the project directory with the name of database.db being from the sqlite database. ([Virtual environments](#create-virtual-env) recommended):
 
@@ -43,5 +44,4 @@ while date <= datetime.datetime.today():
     date += datetime.timedelta(days=1)
 
 ```
-<span style='color:red'>Attention</span>: Be careful to make this available in code repositories like gitlab or github add it to .gitignore
 
